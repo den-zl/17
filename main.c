@@ -407,10 +407,11 @@ void test() {
 
 int main() {
 
-    char s1[6] = "HLLDS";
-    char s2[8] = "HELLO";
-    int res = strcmp_(s1, s2);
-    printf("%d", res);
+    char src[] = "12345678910";
+    char dst[20];
+    char *res = copy(src, src + sizeof(char) * 5, dst);
+    printf("%s", res);
+    printf("%s", dst);
 
     return 0;
 }
