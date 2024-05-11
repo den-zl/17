@@ -9,3 +9,6 @@
 /Users/denzl/CLionProjects/2sem/19.17/lab_17/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir
 /Users/denzl/CLionProjects/2sem/19.17/lab_17/cmake-build-debug/libs/algorithms/CMakeFiles/edit_cache.dir
 /Users/denzl/CLionProjects/2sem/19.17/lab_17/cmake-build-debug/libs/algorithms/CMakeFiles/rebuild_cache.dir
+/Users/denzl/CLionProjects/2sem/19.17/lab_17/cmake-build-debug/libs/string/CMakeFiles/string.dir
+/Users/denzl/CLionProjects/2sem/19.17/lab_17/cmake-build-debug/libs/string/CMakeFiles/edit_cache.dir
+/Users/denzl/CLionProjects/2sem/19.17/lab_17/cmake-build-debug/libs/string/CMakeFiles/rebuild_cache.dir

@@ -27,7 +27,8 @@
 					"childIndexes" : 
 					[
 						2,
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-libs-Debug-ec580da4e47c3b0e73da.json",
 					"minimumCMakeVersion" : 
@@ -67,6 +68,21 @@
 					[
 						0
 					]
+				},
+				{
+					"build" : "libs/string",
+					"jsonFile" : "directory-libs.string-Debug-b8329bd2a14f275a2859.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "libs/string",
+					"targetIndexes" : 
+					[
+						3
+					]
 				}
 			],
 			"name" : "Debug",
@@ -78,14 +94,16 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "lab",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -108,8 +126,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab-Debug-918230602aa4aacdbfac.json",
+					"jsonFile" : "target-lab-Debug-48571d9eba4e46d76d71.json",
 					"name" : "lab",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "string::@3f2b1fb9d1440f41f43e",
+					"jsonFile" : "target-string-Debug-4a600a91e7d4930ff1d9.json",
+					"name" : "string",
 					"projectIndex" : 0
 				}
 			]

@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "libs/data_structures/vector/vector.h"
 #include "libs/data_structures/matrix/matrix.h"
+#include "libs/string/tasks/string_.h"
 
 void test_swapRowsByMinMaxElements() {
     matrix m1 = createMatrixFromArray(
@@ -405,7 +406,10 @@ void test() {
 
 
 int main() {
-    test();
+
+    char s2[10] = "\tHello\t";
+    size_t res = strlen_(s2);
+    printf("%zu", res);
 
     return 0;
 }
