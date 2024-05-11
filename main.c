@@ -407,9 +407,10 @@ void test() {
 
 int main() {
 
-    char s2[20] = "HELLO ";
-    char *res = findSpaceReverse(s2 + sizeof(char) * 6, s2);
-    printf("%c", *res);
+    char s1[6] = "HLLDS";
+    char s2[8] = "HELLO";
+    int res = strcmp_(s1, s2);
+    printf("%d", res);
 
     return 0;
 }
