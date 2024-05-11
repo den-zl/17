@@ -6,5 +6,7 @@
 
 size_t strlen_(const char *s);
 
+char* find(char *begin, char *end, int ch);
+
 
 #endif
