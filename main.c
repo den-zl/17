@@ -409,8 +409,7 @@ int main() {
 
     char src[] = "12345678910";
     char dst[20];
-    char *res = copyIf(src, src + sizeof(char) * 7, dst, checkIfNotNum);
-    printf("%s", res);
+    char *res = copyIfReverse(src, src + sizeof(char) * 7, dst, &checkIfNotNum);
     printf("%s", dst);
 
     return 0;

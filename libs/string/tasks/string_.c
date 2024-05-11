@@ -105,11 +105,24 @@ char* copy(const char *beginSource, const char *endSource, char *beginDestinatio
 }
 
 int checkIfNotNum(int i) {
-    return i != '3' && i != '6';
+    return i != '4' && i != '6';
 }
 
 char* copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
     for (char *i = beginSource; i <= endSource - 1; i += sizeof(char)) {
+
+        if (f(*i)) {
+            *beginDestination = *i;
+            beginDestination += sizeof(char);
+        }
+    }
+
+    *beginDestination = '\0';
+    return beginDestination;
+}
+
+char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
+    for (char *i = rendSource; i >= rbeginSource + 1; i -= sizeof(char)) {
 
         if (f(*i)) {
             *beginDestination = *i;

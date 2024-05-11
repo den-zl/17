@@ -23,5 +23,7 @@ char* copy(const char *beginSource, const char *endSource, char *beginDestinatio
 int checkIfNotNum(int i);
 char* copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int));
 
+char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int));
+
 
 #endif
