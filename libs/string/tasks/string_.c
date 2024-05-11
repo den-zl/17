@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <memory.h>
 #include "string_.h"
 
 
@@ -97,9 +98,23 @@ int strcmp_(const char *lhs, const char *rhs) {
 }
 
 char* copy(const char *beginSource, const char *endSource, char *beginDestination) {
-    for (char *i = beginSource; i <= endSource; i += sizeof(char)) {
-        *beginDestination = *i;
-        beginDestination += sizeof(char);
+    size_t size = endSource - beginSource + 1;
+    memcpy(beginDestination, beginSource, size);
+
+    return beginDestination + size;
+}
+
+int checkIfNotNum(int i) {
+    return i != '3' && i != '6';
+}
+
+char* copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
+    for (char *i = beginSource; i <= endSource - 1; i += sizeof(char)) {
+
+        if (f(*i)) {
+            *beginDestination = *i;
+            beginDestination += sizeof(char);
+        }
     }
 
     *beginDestination = '\0';
