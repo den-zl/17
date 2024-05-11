@@ -33,3 +33,18 @@ char* findNonSpace(char *begin) {
     }
     return ptr;
 }
+
+char* findSpace(char *begin) {
+    char *ptr = begin;
+
+    while (*ptr != '\0') {
+        int res = 0;
+        res = isspace(*ptr);
+        if (res) {
+            return ptr;
+        }
+
+        ptr += sizeof(char);
+    }
+    return ptr;
+}

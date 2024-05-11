@@ -407,8 +407,8 @@ void test() {
 
 int main() {
 
-    char s2[20] = "   Hello    ";
-    char *res = findNonSpace(s2);
+    char s2[20] = "Hello";
+    char *res = findSpace(s2);
     printf("%c", *res);
 
     return 0;
